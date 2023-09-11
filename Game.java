@@ -35,12 +35,12 @@ public class Game{
 
    public static String definirGanador(int computador, int jugador){
     String ganador="";
-    if(computador > jugador)
-        ganador="Computer";
-    else if (computador == jugador)
-        ganador="Computer and player even";
-        if(computador  < jugador)
-         ganador="Player";
+    if (computador == jugador)
+     ganador="Computer and player even";
+    else if((computador==2 && jugador==3) || (computador==1 && jugador==2) || (computador==3 && jugador==1))
+        ganador="Player";
+    else 
+         ganador="Computer";
     return ganador;
    }
 
