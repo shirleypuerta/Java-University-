@@ -32,7 +32,7 @@ public class Game{
 
     scan.close();
    }
-
+   //define the winner
    public static String definirGanador(int computador, int jugador){
     String ganador="";
     if (computador == jugador)
