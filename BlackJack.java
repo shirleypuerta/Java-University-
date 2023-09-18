@@ -20,12 +20,15 @@ public class BlackJack {
           printCard(playerCard2);
         int totalPlayer=playerCard1+playerCard2;
         System.out.println("The Player hand value is: "+totalPlayer);
+         System.out.println("Press any key to continue");
+ 
+        String continuar=scan.nextLine();
         int dealerCard1=generateRandomCards();
          printCard(dealerCard1);
         int dealerCard2=generateRandomCards();
          printCoverCard();
           int totalDealer=dealerCard1+dealerCard2;
-          System.out.println("The dealer hand value is: "+totalDealer);
+         // System.out.println("The dealer hand value is: "+totalDealer);
     }
     else{
         System.out.println("Bye BlackJack!!");
